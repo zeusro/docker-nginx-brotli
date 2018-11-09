@@ -10,3 +10,9 @@ As this project is based on the official [nginx image](https://hub.docker.com/_/
     export image=xxx:1.15.0-alpine3.8
     docker build -t $image .
     docker push $image
+
+## gzip/brotli双编码
+
+支持brotli时用brotli,不支持brotli时用gzip作为content-encoding
+
+https://github.com/zeusro/docker-nginx-brotli/blob/master/example.conf
