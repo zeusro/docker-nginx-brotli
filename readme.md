@@ -7,7 +7,7 @@ As this project is based on the official [nginx image](https://hub.docker.com/_/
 
 ## 构建方式
 
-    export image=xxx:1.15.0-alpine3.8
+    export image=nginx-brotli:1.15.12-alpine3.9
     docker build -t $image .
     docker push $image
 
