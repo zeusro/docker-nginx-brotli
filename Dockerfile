@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
+LABEL maintainer="https://github.com/zeusro"
 
 ENV NGINX_VERSION 1.15.12
 ENV NGX_BROTLI_COMMIT bfd2885b2da4d763fed18f49216bb935223cd34b 
