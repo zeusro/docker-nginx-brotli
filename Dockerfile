@@ -1,12 +1,12 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 
-ENV NGINX_VERSION 1.15.0
+ENV NGINX_VERSION 1.15.12
 ENV NGX_BROTLI_COMMIT bfd2885b2da4d763fed18f49216bb935223cd34b 
 
-RUN echo https://mirrors.ustc.edu.cn/alpine/v3.8/main > /etc/apk/repositories; \
-	echo https://mirrors.ustc.edu.cn/alpine/v3.8/community >> /etc/apk/repositories;\
+RUN echo https://mirrors.ustc.edu.cn/alpine/v3.9/main > /etc/apk/repositories; \
+	echo https://mirrors.ustc.edu.cn/alpine/v3.9/community >> /etc/apk/repositories;\
 	GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 	&& CONFIG="\
 		--prefix=/etc/nginx \
